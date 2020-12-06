@@ -39,5 +39,10 @@ namespace ScheduleBrewEFClasses.Models
         public virtual Style Style { get; set; }
         public virtual ICollection<Batch> Batch { get; set; }
         public virtual ICollection<RecipeIngredient> RecipeIngredient { get; set; }
+
+        public override string ToString()
+        {
+            return "Name: " + Name + " Style: " + Style;
+        }
     }
 }

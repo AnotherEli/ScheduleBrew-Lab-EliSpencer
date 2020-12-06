@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleBrewProjectTests", "ScheduleBrewProjectTests\ScheduleBrewProjectTests.csproj", "{A38C3BE6-A1E1-4047-82C6-2D7EE786B983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleBrewProjectTests", "ScheduleBrewProjectTests\ScheduleBrewProjectTests.csproj", "{A38C3BE6-A1E1-4047-82C6-2D7EE786B983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleBrewEFClasses", "ScheduleBrewEFClasses\ScheduleBrewEFClasses.csproj", "{FFE05201-7104-498C-8779-AC398C843EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleBrewEFClasses", "ScheduleBrewEFClasses\ScheduleBrewEFClasses.csproj", "{FFE05201-7104-498C-8779-AC398C843EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleBrewAPI", "ScheduleBrewAPI\ScheduleBrewAPI.csproj", "{EEBC4D07-BD20-4404-80C0-76D1C625DDEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FFE05201-7104-498C-8779-AC398C843EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFE05201-7104-498C-8779-AC398C843EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFE05201-7104-498C-8779-AC398C843EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBC4D07-BD20-4404-80C0-76D1C625DDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBC4D07-BD20-4404-80C0-76D1C625DDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBC4D07-BD20-4404-80C0-76D1C625DDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBC4D07-BD20-4404-80C0-76D1C625DDEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

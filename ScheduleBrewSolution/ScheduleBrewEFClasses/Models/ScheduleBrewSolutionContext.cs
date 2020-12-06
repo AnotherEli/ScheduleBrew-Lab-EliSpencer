@@ -58,7 +58,7 @@ namespace ScheduleBrewEFClasses.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = ConfigDB.GetMySqlConnectionString();
+            string connectionString = "server=127.0.0.1;uid=root;pwd=liraandmel;database=bits";
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseMySQL(connectionString);
