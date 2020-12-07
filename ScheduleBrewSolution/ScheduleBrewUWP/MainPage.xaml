@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ScheduleBrewUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ScheduleBrewUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#FF1E6EAE"/>
+        </Grid.Background>
+        <Button Content="Schedule a Brew" Height="300" Width="300" BorderBrush="White" FontSize="36" FontWeight="Normal" FontFamily="Arial" FocusVisualPrimaryBrush="Black" Foreground="White" Click="Button_Click" Margin="960,373,0,0" VerticalAlignment="Top">
+            <Button.Background>
+                <SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}"/>
+            </Button.Background>
+        </Button>
+        <ListView HorizontalAlignment="Left" Height="1070" VerticalAlignment="Center" Width="466" SelectionChanged="ListView_SelectionChanged" BorderBrush="White" Foreground="White">
+            <ListView.Background>
+                <SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}"/>
+            </ListView.Background>
+        </ListView>
+    </Grid>
+</Page>

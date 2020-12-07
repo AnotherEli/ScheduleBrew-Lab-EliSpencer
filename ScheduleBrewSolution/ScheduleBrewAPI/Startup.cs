@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ScheduleBrewEFClasses;
+using ScheduleBrewEFClasses.Models;
 
 namespace ScheduleBrewAPI
 {
@@ -25,6 +27,17 @@ namespace ScheduleBrewAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // add cors policy - in a production app lock this down!
+            services.AddCors(options => {
+                options.AddDefaultPolicy(
+                    builder => {
+                        builder.AllowAnyOrigin()
+                            .WithMethods("POST", "PUT", "DELETE", "GET", "OPTIONS")
+                            .AllowAnyHeader();
+                    });
+            });
+            // adding the dbContext to the service
+            services.AddDbContext<ScheduleBrewSolutionContext>(); 
             services.AddControllers();
         }
 
@@ -36,7 +49,8 @@ namespace ScheduleBrewAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+            app.UseCors();
 
             app.UseRouting();
 
